@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { withRouter} from 'react-router-dom'
+import londonSkyline from './londonSkyline.png'
 
 
 
@@ -20,6 +21,7 @@ class About extends Component {
 
             <div className='about-div'>
                 <div>About Page</div>
+            
             </div>
             <div className='about-div'>
                 <div>Who we are? What we do?</div>
@@ -32,6 +34,9 @@ class About extends Component {
             </div>
             <div className='about-div'>
                 <div>Services</div>
+                <div>
+
+                </div>
             </div>
 
         </div>
