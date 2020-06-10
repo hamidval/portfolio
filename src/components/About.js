@@ -34,12 +34,16 @@ class About extends Component {
                 </div>
             </div>
             <div className='about-div div-margin'>
+               <button className='btn btn-success'><div className='h3'>Meet The Developers</div></button> 
+            
+            </div>
+            <div className='about-div div-margin'>
                 <div className='h3'>Services</div>
                 <div className='h6 grid'>
                     {
                         this.state.services.map((item,index)=>(
-                            <div className='service'>
-                               <h6>{item}</h6>
+                            <div className='service '>
+                                <div className='center-txt'>{item}</div>
                             </div>
 
                         ))

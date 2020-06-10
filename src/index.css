@@ -77,8 +77,9 @@ img{
   display: grid;
 	grid-gap: 20px;
 /*	grid-template-columns: repeat(auto-fill,minmax(200px,1fr));*/
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+ 
 
   
 
@@ -88,6 +89,9 @@ img{
 height: 70px;
 border: 1px solid black;
 border-radius: 5px;
+display: inline-block;
+
   
 
 }
+
