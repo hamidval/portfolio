@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { withRouter} from 'react-router-dom'
-import londonSkyline from './londonSkyline.png'
+import londonSky from './londonSky.jpg'
 
 
 
@@ -19,8 +19,9 @@ class About extends Component {
         
         <div className='par-div'>
 
-            <div className='about-div'>
-                <div>About Page</div>
+            <div className='about-div-40'>
+                <div className='abs-txt strokeme'>About Us</div>
+                <img className='about-img' src={londonSky}/>
             
             </div>
             <div className='about-div'>
