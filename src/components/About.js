@@ -2,30 +2,44 @@ import React, { Component } from 'react';
 import { withRouter} from 'react-router-dom'
 import londonSky from './londonSky.jpg'
 
+const imageStyle = {
+    backgroundImage: `url(${londonSky})`,
+    height:'33%',
+    backgroundSize: '100% auto'
 
+  }
 
 class About extends Component {
 
    constructor(props){
         super(props)
-        this.state={services:["websites","mobile apps","seo","web apps","websites","mobile apps","seo","web apps"]}
+        this.state={services:["websites","mobile apps","seo","web apps","websites","mobile apps","seo","web apps"],
+                    image:null}
 
+   }
+
+
+   componentDidMount = ()=>{
+    this.setState({image:londonSky})
    }
 
 
     render() {
 
         return ( 
+      
+
+           
         
         <div className='par-div'>
 
-            <div >
+            <div style={imageStyle}>
                
-                <img className='img-fluid' alt='Responsive image' src={londonSky}/>
-                <div className='abs-txt strokeme'>About Us</div>
+       
+            <div className='abs-txt strokeme'>About Us</div>
             
             </div>
-            <div className='about-div div-margin'>
+            <div className='about-div div-margin '>
                 <div className='h3'>Who we are? What we do?</div>
                 <div>
                     <p className='h6'>
@@ -58,6 +72,7 @@ class About extends Component {
             </div>
 
         </div>
+
         );
     }
 }
