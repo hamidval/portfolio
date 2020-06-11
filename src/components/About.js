@@ -20,8 +20,9 @@ class About extends Component {
         <div className='par-div'>
 
             <div >
-                <div className='abs-txt strokeme'>About Us</div>
+               
                 <img className='img-fluid' alt='Responsive image' src={londonSky}/>
+                <div className='abs-txt strokeme'>About Us</div>
             
             </div>
             <div className='about-div div-margin'>
