@@ -38,6 +38,7 @@ class Projects extends Component {
     }
     render(){
         return(
+          <div>
             <React.Fragment>
             <CssBaseline />
             <AppBar position="relative">
@@ -48,7 +49,7 @@ class Projects extends Component {
                 </Typography> */}
               </Toolbar>
             </AppBar>
-            <main>
+            <div>
               {/* Hero unit */}
               <div className='heroContent'>
                 <Container maxWidth="sm">
@@ -91,9 +92,9 @@ class Projects extends Component {
                   ))}
                 </Grid>
               </Container>
-            </main>
+            </div>
             {/* Footer */}
-            <footer className='footer'>
+            {/* <footer className='footer'>
               <Typography variant="h6" align="center" gutterBottom>
                 Footer
               </Typography>
@@ -101,9 +102,10 @@ class Projects extends Component {
                 Something here to give the footer a purpose!
               </Typography>
               <Copyright />
-            </footer>
+            </footer> */}
             {/* End footer */}
           </React.Fragment>
+          </div>
 
         )
     }

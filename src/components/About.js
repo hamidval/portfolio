@@ -33,10 +33,12 @@ class About extends Component {
         
         <div className='par-div'>
 
-            <div style={imageStyle}>
+            <div >
                
        
-            <div className='abs-txt strokeme'>About Us</div>
+            <div className='h1' >
+                About Us
+            </div>
             
             </div>
             <div className='about-div div-margin '>
