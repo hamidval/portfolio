@@ -5,22 +5,26 @@ import { withRouter} from 'react-router-dom'
 
 class Home extends Component {
 
-   constructor(props){
-        super(props)
-        this.state={}
-
-   }
 
 
     render() {
 
         return ( 
-        
-        <div >
+            
+            <section id="Menu">
+                <nav class="TopMenu">
+                    <ul>
+                        <li class="Logo">LOGO</li>
+                        <li class="MenuLinks"><a href="#">Menu</a></li>
+                        <li class="MenuLinks"><a href="#">Menu</a></li>
+                        <li class="MenuLinks"><a href="#">Menu</a></li>
+                    </ul>
+                </nav>
+                <div className="Banner">
+                    <h1>Something catchy!</h1>
+                </div>
+            </section>
 
-            HOME
-
-        </div>
         );
     }
 }
