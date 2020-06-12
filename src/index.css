@@ -130,4 +130,27 @@ display: inline-block;
  
   padding: 10px
 }
+.TopMenu li{
+  display: inline;
+  list-style: none;
+  padding: 1.3em;
+  
+}
 
+.Banner{
+  height: 100vh;
+  text-align: center;
+
+
+}
+
+
+.top-50{
+  /* top:50%;
+  left:40%;
+  position: absolute;
+  color: lightgray; */
+  /* margin-top: 100px;
+  position: relative; */
+  
+}
