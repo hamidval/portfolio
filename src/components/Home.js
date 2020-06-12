@@ -13,6 +13,15 @@ const imageStyle = {
 
   }
 
+  const aboutStyle = {
+    backgroundColor:'white',
+    height:'100vh',
+    backgroundSize: 'auto 100%',
+    textAlign: 'center',
+    position: 'inline',
+    marginTop: '0  !important'
+
+  }
 
 
 
@@ -35,11 +44,13 @@ class Home extends Component {
                     </div>
 
                 </div>
-                <div className='h-100'>
+                <div style={aboutStyle}>
                     <About/>                   
+                    
                 </div>
-                <div className='h-100'>
+                <div style={aboutStyle}>
                     <Projects/>
+                    
                 </div>
             </div>
 

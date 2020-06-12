@@ -34,77 +34,31 @@ const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 class Projects extends Component {
     constructor(){
         super()
-        this.state = {}
+        this.state = {projects:['AI','Twitter','Instagram','Facebook']}
     }
     render(){
         return(
-          <div>
-            <React.Fragment>
-            <CssBaseline />
-            <AppBar position="relative">
-              <Toolbar>
-                {/* <CameraIcon className='icon' /> */}
-                {/* <Typography variant="h6" color="inherit" noWrap>
-                  Projects
-                </Typography> */}
-              </Toolbar>
-            </AppBar>
-            <div>
-              {/* Hero unit */}
-              <div className='heroContent'>
-                <Container maxWidth="sm">
-                  <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
-                    Our Projects
-                  </Typography>
-          
-    
-                </Container>
+          <div >
+            <h1>Projects</h1>
+            <div className='grid'>
+            {
+              this.state.projects.map((item,index)=>(
+                <div  className='service'>
+                <div className="card" style={{width: '18rem'}}>
+                {/* <img className="card-img-top" src="..." alt="Card image cap"/> */}
+                <div className="card-body">
+                <h5 className="card-title">{item}</h5>
+                
+                </div>
               </div>
-              <Container className='cardGrid' maxWidth="md">
-                {/* End hero unit */}
-                <Grid container spacing={4}>
-                  {cards.map((card) => (
-                    <Grid item key={card} xs={12} sm={6} md={4}>
-                      <Card className='card'>
-                        <CardMedia
-                          className='cardMedia'
-                          image="https://source.unsplash.com/random"
-                          title="Image title"
-                        />
-                        <CardContent className='cardContent'>
-                          <Typography gutterBottom variant="h5" component="h2">
-                            Heading
-                          </Typography>
-                          <Typography>
-                            This is a media card. You can use this section to describe the content.
-                          </Typography>
-                        </CardContent>
-                        <CardActions>
-                          <Button size="small" color="primary">
-                            View
-                          </Button>
-                          <Button size="small" color="primary">
-                            Edit
-                          </Button>
-                        </CardActions>
-                      </Card>
-                    </Grid>
-                  ))}
-                </Grid>
-              </Container>
             </div>
-            {/* Footer */}
-            {/* <footer className='footer'>
-              <Typography variant="h6" align="center" gutterBottom>
-                Footer
-              </Typography>
-              <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
-                Something here to give the footer a purpose!
-              </Typography>
-              <Copyright />
-            </footer> */}
-            {/* End footer */}
-          </React.Fragment>
+
+
+              ))
+            }
+
+            </div>
+
           </div>
 
         )

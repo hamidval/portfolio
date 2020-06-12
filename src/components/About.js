@@ -28,50 +28,32 @@ class About extends Component {
 
         return ( 
       
-
-           
-        
-        <div className='par-div'>
-
-            <div >
-               
-       
-            <div className='h1' >
-                About Us
-            </div>
-            
-            </div>
-            <div className='about-div div-margin '>
-                <div className='h3'>Who we are? What we do?</div>
-                <div>
-                    <p className='h6'>
+        <div >
+            <h1>About Us</h1>
+            <h3>Who we are ? What we do?</h3>
+            <p className='h6'>
                         We are a small development group based in London, looking to take on small and medium sized projects
-                        Our developers are young, ambitious and skilled in web and app development projects
-                    </p>
-                </div>
-            </div>
-            <div className='about-div div-margin'>
-               <button className='btn btn-success'><div className='h3'>Meet The Developers</div></button> 
-            
-            </div>
-            <div className='about-div div-margin'>
-                <div className='h3'>Services</div>
-                <div className='h6 grid'>
-                    {
-                        this.state.services.map((item,index)=>(
-                            <div className='service '>
-                                <div className='center-txt'>{item}</div>
-                            </div>
+                         Our developers are young, ambitious and skilled in web and app development projects
+            </p>
+            <h3>Services</h3>
 
+            <div className='grid'>
+            {
+                        this.state.services.map((item,index)=>(
+                        <div  className='service'>
+                            <div className="card" style={{width: '18rem'}}>
+                            {/* <img className="card-img-top" src="..." alt="Card image cap"/> */}
+                            <div className="card-body">
+                            <h5 className="card-title">{item}</h5>
+                            
+                            </div>
+                          </div>
+                        </div>
                         ))
                     }
-                
-                </div>
 
-                <div>
-
-                </div>
             </div>
+   
 
         </div>
 
