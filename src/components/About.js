@@ -4,7 +4,7 @@ import londonSky from './londonSky.jpg'
 
 const imageStyle = {
     backgroundImage: `url(${londonSky})`,
-    height:'33%',
+    height:'30%',
     backgroundSize: '100% auto'
 
   }
@@ -19,7 +19,7 @@ class About extends Component {
    }
 
 
-   componentDidMount = ()=>{
+   componentDidMount = () => {
     this.setState({image:londonSky})
    }
 
