@@ -3,6 +3,7 @@ import { withRouter} from 'react-router-dom'
 import londonSky from './londonSky.jpg'
 import About from './About'
 import Projects from './Projects'
+import { colors } from '@material-ui/core';
 const imageStyle = {
     backgroundImage: `url(${londonSky})`,
     height:'100vh',
@@ -15,7 +16,7 @@ const imageStyle = {
 
   const aboutStyle = {
     backgroundColor:'white',
-    height:'100vh',
+    minHeight:'100vh',
     backgroundSize: 'auto 100%',
     textAlign: 'center',
     position: 'inline',
@@ -23,6 +24,16 @@ const imageStyle = {
 
   }
 
+  const projectsStyle = {
+    backgroundColor:'black',
+    minHeight:'100vh',
+    backgroundSize: 'auto 100%',
+    textAlign: 'center',
+    position: 'inline',
+    marginTop: '0  !important',
+    color: 'white'
+
+  }
 
 
 
@@ -48,7 +59,7 @@ class Home extends Component {
                     <About/>                   
                     
                 </div>
-                <div style={aboutStyle}>
+                <div style={projectsStyle}>
                     <Projects/>
                     
                 </div>

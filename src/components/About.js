@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { withRouter} from 'react-router-dom'
 import londonSky from './londonSky.jpg'
+import { IoIosBrowsers } from 'react-icons/io';
+import { FaChartLine, FaLaptop,FaRobot,FaTwitter,FaInstagram,FaFacebook } from 'react-icons/fa';
 
 const imageStyle = {
     backgroundImage: `url(${londonSky})`,
@@ -13,7 +15,9 @@ class About extends Component {
 
    constructor(props){
         super(props)
-        this.state={services:["websites","mobile apps","seo","web apps","websites","mobile apps","seo","web apps"],
+        this.state={services:[["Websites",<IoIosBrowsers size={70}/>],
+                              ["SEO",     <FaChartLine size={70}/>],
+                              ["Business Systems",<FaLaptop size={70}/>]],
                     image:null}
 
    }
@@ -36,6 +40,8 @@ class About extends Component {
                          Our developers are young, ambitious and skilled in web and app development projects
             </p>
             <h3>Services</h3>
+   
+            
 
             <div className='grid'>
             {
@@ -44,7 +50,10 @@ class About extends Component {
                             <div className="card" style={{width: '18rem'}}>
                             {/* <img className="card-img-top" src="..." alt="Card image cap"/> */}
                             <div className="card-body">
-                            <h5 className="card-title">{item}</h5>
+                            <h5 className="card-title">{item[0]}</h5>
+                            {item[1]}
+                           
+                     
                             
                             </div>
                           </div>

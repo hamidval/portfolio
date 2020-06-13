@@ -12,6 +12,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 import Link from '@material-ui/core/Link';
+import { FaRobot,FaTwitter,FaInstagram,FaFacebook } from 'react-icons/fa';
 
 function Copyright() {
   return (
@@ -34,21 +35,21 @@ const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 class Projects extends Component {
     constructor(){
         super()
-        this.state = {projects:['AI','Twitter','Instagram','Facebook']}
+        this.state = {projects:[['AI',<FaRobot size={70}/>],['Twitter',<FaTwitter size={70}/>],['Instagram',<FaInstagram size={70}/>],['Facebook',<FaFacebook size={70}/>]]}
     }
     render(){
         return(
-          <div >
+          <div className=''>
             <h1>Projects</h1>
             <div className='grid'>
             {
               this.state.projects.map((item,index)=>(
                 <div  className='service'>
-                <div className="card" style={{width: '18rem'}}>
+                <div className="card" style={{width: '18rem',color:'black'}}>
                 {/* <img className="card-img-top" src="..." alt="Card image cap"/> */}
                 <div className="card-body">
-                <h5 className="card-title">{item}</h5>
-                
+                <h5 className="card-title">{item[0]}</h5>
+                {item[1]}
                 </div>
               </div>
             </div>

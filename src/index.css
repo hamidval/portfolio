@@ -159,3 +159,8 @@ display: inline-block;
   background-color: yellow;
   background-size: 'auto 100%'
 }
+
+.projects-back{
+  background-color: black;
+  color: #FFFFF0;
+}
