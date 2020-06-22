@@ -18,7 +18,7 @@ class App extends Component {
    <Router basename={'dev-website'}>
     <div >
       
-      <Route exact path='/' render={() => (<Home  />)}/> 
+      <Route exact path='/' render={() => (<PortfolioHamid  />)}/> 
       <Route exact path='/about' render={() => (<About  />)}/> 
       <Route exact path='/projects' render={() => (<Projects  />)}/> 
       <Route exact path='/hamid' render={() => (<PortfolioHamid  />)}/> 
