@@ -15,7 +15,7 @@ class App extends Component {
 
     return(
     <div className="App" >
-   <Router>
+   <Router basename={'dev-website'}>
     <div >
       
       <Route exact path='/' render={() => (<Home  />)}/> 
